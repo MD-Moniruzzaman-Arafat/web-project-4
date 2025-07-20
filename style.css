@@ -196,18 +196,21 @@ button {
 }
 
 .choose-your-destination-container,
-.why-choose-us-container {
+.why-choose-us-container,
+.deals-discounts-container {
     padding: 50px 0;
 }
 
 .choose-your-destination-title,
-.why-choose-us-title {
+.why-choose-us-title,
+.deals-discounts-title {
     max-width: 650px;
     margin: 0 auto;
 }
 
 .choose-your-destination-title h1,
-.why-choose-us-title h1 {
+.why-choose-us-title h1,
+.deals-discounts-title h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #131318;
@@ -218,7 +221,8 @@ button {
 }
 
 .choose-your-destination-title p,
-.why-choose-us-title p {
+.why-choose-us-title p,
+.deals-discounts-title p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
@@ -306,6 +310,90 @@ button {
     margin-bottom: 20px;
 }
 
+.deals-discounts-card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deals-discounts-card {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.deals-discounts-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+
+.discount-details {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    max-width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 40px;
+}
+
+.sedule {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sedule i {
+    color: #FF5400;
+    margin-right: 5px;
+}
+
+.discount-details h3 {
+    color: #131318;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.discount-details p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+    padding-right: 80px;
+    /* 162.5% */
+}
+
+.discount-details h5 {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
 /* responsive design */
 @media (max-width: 320px) {
     .navbar-container {
@@ -340,7 +428,8 @@ button {
 
     .banner-container,
     .why-choose-us-container,
-    .choose-your-destination-container {
+    .choose-your-destination-container,
+    .deals-discounts-card-container {
         margin: 0 10px;
     }
 
@@ -430,5 +519,51 @@ button {
         /* 162.5% */
         margin-bottom: 20px;
         text-align: justify;
+    }
+
+    .deals-discounts-card {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+    }
+
+    .discount-details {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        max-width: 579px;
+        height: 389px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 20px;
+        margin: 40px 10px 0px 10px;
+    }
+
+    .sedule {
+        margin-bottom: 10px;
+    }
+
+    .discount-details h3 {
+        color: #131318;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+
+    .discount-details p {
+        color: #5A5A5D;
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 5px;
+        padding-right: 0px;
+        /* 162.5% */
     }
 }
